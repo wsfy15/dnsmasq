@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dns:
+    image: wsfy15/dnsmasq
+    #build: .
+    restart: always
+    ports:
+      - "53:53"
+      - "53:53/udp"
